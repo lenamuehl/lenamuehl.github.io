@@ -1,9 +1,9 @@
-// ===== constants =====
+// constants
 const EMAIL = "muehlbauer-lena@web.de";
 const isPages = location.pathname.includes("/pages/");
 const base = isPages ? "../" : "";
 
-// ===== generic component loader =====
+// component loader
 async function loadComponent(targetId, filePath) {
   const el = document.getElementById(targetId);
   if (!el) return;
@@ -18,7 +18,7 @@ async function loadComponent(targetId, filePath) {
   }
 }
 
-// ===== active nav =====
+// active nav
 function setActiveNav() {
   const currentFile = (location.pathname.split("/").pop() || "index.html");
   document.querySelectorAll("nav a[data-page]").forEach(a => {
@@ -26,13 +26,7 @@ function setActiveNav() {
   });
 }
 
-// ===== footer year =====
-function setFooterYear() {
-  const y = document.getElementById("year");
-  if (y) y.textContent = new Date().getFullYear();
-}
-
-// ===== reveal animation =====
+//reveal animation 
 function initRevealOnScroll() {
   const items = document.querySelectorAll(".reveal, .stagger > *");
   if (!items.length) return;
@@ -52,7 +46,7 @@ function initRevealOnScroll() {
   items.forEach(el => obs.observe(el));
 }
 
-// ===== contact mailto =====
+// contact mailto
 function initContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
@@ -69,30 +63,27 @@ function initContactForm() {
   });
 }
 
-// ===== projects json rendering (optional hook) =====
-// Falls du das schon drin hast: hier nur ein Stub, damit nichts crasht
+// projects json rendering
 async function renderProjectsIfNeeded() {
   // TODO: Wenn du das JSON-Rendering aktiv hast, ruf hier deinen Renderer auf.
 }
 
-// ===== boot =====
+// boot
 document.addEventListener("DOMContentLoaded", async () => {
   // header/footer
   await loadComponent("header", isPages ? "../components/header/header-pages.html"
                                       : "components/header/header-root.html");
   await loadComponent("footer", `${base}components/footer.html`);
 
-  // home-only components (only exist on index.html)
+  // home-only components
   await loadComponent("hero-slot", "components/hero.html");
   await loadComponent("highlights-slot", "components/highlights.html");
 
-  // pages-only components (only exist on pages/contact.html etc.)
+  // pages-only components
   await loadComponent("contact-cards-slot", "../components/contact-cards.html");
   await loadComponent("projects-slot", "../components/project-section.html"); 
-  // ^ bei dir heißt es im Explorer "project-section.html" (nicht projects-section.html)
 
   setActiveNav();
-  setFooterYear();
   initRevealOnScroll();
   initContactForm();
 
