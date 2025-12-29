@@ -63,7 +63,7 @@ function initContactForm() {
   });
 }
 
-// ---------- helpers ----------
+// helpers 
 function escapeHtml(str = "") {
   return String(str)
     .replaceAll("&", "&amp;")
@@ -73,14 +73,14 @@ function escapeHtml(str = "") {
     .replaceAll("'", "&#039;");
 }
 
-// ---------- projects rendering (matches your data/projects.json array) ----------
+// projects rendering
 function projectCard(p) {
   const title = escapeHtml(p.title || "");
   const desc = escapeHtml(p.description || "");
   const tech = Array.isArray(p.tech) ? p.tech : [];
   const workedWith = Array.isArray(p.workedWith) ? p.workedWith : [];
 
-  // image path: from pages/* we need ../assets/..., from root we need assets/...
+  // image path
   const imgHtml = p.image
     ? `<img src="${base}${escapeHtml(p.image)}" alt="${title}" style="width:100%; border-radius:16px; margin-bottom:10px;">`
     : "";
