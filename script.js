@@ -98,7 +98,7 @@ function projectCard(p) {
       ? `<a class="btn" href="${p.demoUrl}" target="_blank" rel="noopener">Demo</a>`
       : "",
     p.repoUrl
-      ? `<a class="btn" href="${p.repoUrl}" target="_blank" rel="noopener">GitHub</a>`
+      ? `<a class="btn primary" href="${p.repoUrl}" target="_blank" rel="noopener">GitHub</a>`
       : ""
   ].filter(Boolean).join(" ");
 
