@@ -1,0 +1,20 @@
+[
+  {
+    "title": "To-Do App mit Kategorien",
+    "description": "To-Do App mit Kategorien, Tags, Suche/Filter, Deadlines und optional Dark Mode.",
+    "tech": ["JavaScript", "HTML/CSS", "LocalStorage"],
+    "image": "assets/project-1.png",
+    "demoUrl": "#",
+    "repoUrl": "https://github.com/lenamuehl/TODO-REPO",
+    "featured": true
+  },
+  {
+    "title": "News Credibility Study",
+    "description": "Explorative Analysen zu Clickbait & Glaubwürdigkeit inkl. Visualisierungen und Hypothesentests.",
+    "tech": ["Python", "Pandas", "Statistik"],
+    "image": "assets/project-2.png",
+    "demoUrl": "#",
+    "repoUrl": "https://github.com/lenamuehl/TODO-REPO",
+    "featured": false
+  }
+]
