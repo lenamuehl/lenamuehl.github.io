@@ -18,5 +18,15 @@
     "repoUrl": "https://github.com/lenamuehl/memories",
     "featured": false,
     "workedWith": ["Cassandra Andraschko"]
+  },
+  {
+    "title": "Tamagotschi Mila",
+    "description": "A tamagotschi like game with my dog mila as the star. You have to play with her, give her food etc.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "image": "TODO",
+    "demoUrl": "#",
+    "repoUrl": "https://github.com/lenamuehl/Tamagotschi_Mila",
+    "featured": false,
+    "workedWith": []
   }
 ]
