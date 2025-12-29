@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • Your Name</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main class="container">
+      <section class="section">
+        <h2>Contact</h2>
+        <p class="small">
+          Put your real contact info here (email + LinkedIn/GitHub). The form
+          below opens the visitor’s email app.
+        </p>
+
+        <div class="grid" style="margin-top: 14px">
+          <div class="card">
+            <h3>Email</h3>
+            <p class="small">your.email@example.com</p>
+          </div>
+          <div class="card">
+            <h3>GitHub</h3>
+            <p class="small">
+              <a href="#" class="btn" target="_blank" rel="noopener"
+                >Your GitHub →</a
+              >
+            </p>
+          </div>
+          <div class="card">
+            <h3>LinkedIn</h3>
+            <p class="small">
+              <a href="#" class="btn" target="_blank" rel="noopener"
+                >Your LinkedIn →</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <form onsubmit="openMailTo(event)">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message…"
+            ></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="small">
+            Tip: change the email address inside <strong>script.js</strong> to
+            your real one.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>
