@@ -6,15 +6,17 @@
     "image": "assets/project-1.png",
     "demoUrl": "#",
     "repoUrl": "https://github.com/lenamuehl/TODO-REPO",
-    "featured": true
+    "featured": true,
+    "workedWith": ["Max Mustermann", "Studio XY"]
   },
   {
     "title": "News Credibility Study",
-    "description": "Explorative Analysen zu Clickbait & Glaubwürdigkeit inkl. Visualisierungen und Hypothesentests.",
+    "description": "Explorative Analysen zu Clickbait & Glaubwürdigkeit inkl. Visualisierungen.",
     "tech": ["Python", "Pandas", "Statistik"],
     "image": "assets/project-2.png",
     "demoUrl": "#",
     "repoUrl": "https://github.com/lenamuehl/TODO-REPO",
-    "featured": false
+    "featured": false,
+    "workedWith": ["Uni-Projektteam"]
   }
 ]
