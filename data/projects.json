@@ -1,22 +1,22 @@
 [
   {
-    "title": "To-Do App mit Kategorien",
-    "description": "To-Do App mit Kategorien, Tags, Suche/Filter, Deadlines und optional Dark Mode.",
-    "tech": ["JavaScript", "HTML/CSS", "LocalStorage"],
-    "image": "assets/project-1.png",
+    "title": "Rev.UI",
+    "description": "A social media website, where you can get feedback about your UI and find inspiration.",
+    "tech": ["JavaScript", "HTML/CSS", "React", "Node.js", "MongoDB"],
+    "image": "TODO", 
     "demoUrl": "#",
-    "repoUrl": "https://github.com/lenamuehl/TODO-REPO",
+    "repoUrl": "https://github.com/lenamuehl/MME_SS25_Gruppe_D_Rev.UI",
     "featured": true,
-    "workedWith": ["Max Mustermann", "Studio XY"]
+    "workedWith": ["Calvin Dittkrist", "Julia Breit", "Denise Polinski"]
   },
   {
-    "title": "News Credibility Study",
-    "description": "Explorative Analysen zu Clickbait & Glaubwürdigkeit inkl. Visualisierungen.",
-    "tech": ["Python", "Pandas", "Statistik"],
-    "image": "assets/project-2.png",
+    "title": "Memories",
+    "description": "A diary app for you and your friends to keep memories together.",
+    "tech": ["Dart", "Flutter", "Firebase"],
+    "image": "TODO",
     "demoUrl": "#",
-    "repoUrl": "https://github.com/lenamuehl/TODO-REPO",
+    "repoUrl": "https://github.com/lenamuehl/memories",
     "featured": false,
-    "workedWith": ["Uni-Projektteam"]
+    "workedWith": ["Cassandra Andraschko"]
   }
 ]
